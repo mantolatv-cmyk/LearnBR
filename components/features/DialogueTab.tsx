@@ -43,7 +43,7 @@ export function DialogueTab({ lines }: DialogueTabProps) {
         </h2>
         <button
           onClick={playFullDialogue}
-          className="flex items-center gap-2 px-4 py-2 rounded-full font-bold text-sm bg-primary text-white shadow hover:bg-primary-dark transition-all"
+          className="flex items-center justify-center gap-2 px-4 py-2 rounded-full font-bold text-sm bg-primary text-white shadow hover:bg-primary-dark transition-all w-full sm:w-auto"
         >
           {isPlayingAll ? (
             <>

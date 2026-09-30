@@ -73,7 +73,7 @@ export function ScenarioDetailView({ scenario }: ScenarioDetailViewProps) {
       </div>
 
       {/* Tabs Navigation */}
-      <div className="tabs-nav" style={{ flexWrap: 'wrap' }}>
+      <div className="tabs-nav">
         <button
           className={`tab-btn ${activeTab === 'vocabulary' ? 'tab-btn-active' : ''}`}
           onClick={() => setActiveTab('vocabulary')}

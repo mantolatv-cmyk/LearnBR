@@ -104,7 +104,7 @@ export function FlashcardsTab({ items, itemsA2, itemsB1 }: FlashcardsTabProps) {
         </button>
 
         <div
-          className="flashcard-perspective"
+          className="flashcard-perspective touch-manipulation select-none cursor-pointer"
           onClick={() => setIsFlipped(!isFlipped)}
         >
           <div className={`flashcard-inner ${isFlipped ? 'flashcard-flipped' : ''}`}>

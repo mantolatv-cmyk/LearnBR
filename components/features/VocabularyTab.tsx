@@ -101,9 +101,9 @@ export function VocabularyTab({ items, scenarioId }: VocabularyTabProps) {
             >
               <div className="vocab-index">{index + 1}</div>
               <div className="vocab-content w-full">
-                <div className="vocab-header flex justify-between items-center">
-                  <div className="flex items-baseline gap-3 flex-wrap">
-                    <p className="vocab-target" style={{ fontSize: '1.2rem', fontWeight: 800 }}>
+                <div className="vocab-header flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                  <div className="flex items-baseline gap-2 sm:gap-3 flex-wrap">
+                    <p className="vocab-target" style={{ fontSize: '1.15rem', fontWeight: 800 }}>
                       {item.portuguese}
                     </p>
                     {item.pronunciation && (
@@ -112,7 +112,7 @@ export function VocabularyTab({ items, scenarioId }: VocabularyTabProps) {
                       </span>
                     )}
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 self-start sm:self-auto mt-1 sm:mt-0">
                     <button
                       onClick={() => speak(item.portuguese)}
                       title="Listen to Brazilian Portuguese pronunciation"

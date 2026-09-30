@@ -1418,3 +1418,313 @@ a {
   animation: 1.5s ease-in-out infinite bounce-subtle;
   display: inline-block;
 }
+
+/* ==========================================================================
+   Mobile-First & Touch Device Optimizations (Screens <= 640px)
+   ========================================================================== */
+@media (max-width: 640px) {
+  html, body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Safe area padding for modern devices */
+  body {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  /* Header */
+  .header-inner {
+    padding: 0.75rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.15rem;
+    gap: 0.5rem;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+  }
+
+  .lang-badge {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.72rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 2.25rem 1rem 1.75rem;
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.85rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    padding: 0 0.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    padding: 0 0.5rem;
+  }
+
+  .hero-image-wrapper {
+    margin-top: 1.5rem;
+    border-width: 3px;
+    border-radius: var(--radius-lg);
+    aspect-ratio: 16/10;
+  }
+
+  /* Main Content & Grid */
+  .main-content {
+    padding: 1.75rem 1rem 2rem;
+  }
+
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-header-title {
+    font-size: 1.35rem;
+  }
+
+  .section-header-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .scenarios-grid {
+    gap: 1.15rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .card-image-wrapper {
+    height: 180px;
+  }
+
+  .card-body {
+    padding: 1.15rem 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-title-pt {
+    font-size: 0.8rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .card-description {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  /* Scenario Detail Page */
+  .scenario-page {
+    padding: 1.25rem 1rem;
+  }
+
+  .scenario-back-link {
+    font-size: 0.88rem;
+    margin-bottom: 1rem;
+  }
+
+  .scenario-hero {
+    padding: 1.75rem 1rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.5rem;
+  }
+
+  .scenario-hero-icon {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 0.75rem;
+  }
+
+  .scenario-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .scenario-hero-pt {
+    font-size: 0.92rem;
+  }
+
+  /* Horizontal swipeable tabs navigation on mobile */
+  .tabs-nav {
+    gap: 0.35rem;
+    padding: 0.35rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .tabs-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-btn {
+    padding: 0.55rem 0.85rem;
+    font-size: 0.8rem;
+    flex: none;
+    white-space: nowrap;
+    touch-action: manipulation;
+  }
+
+  /* Vocabulary List */
+  .vocabulary-list-item {
+    padding: 1rem 0.85rem;
+    gap: 0.75rem;
+  }
+
+  .vocab-index {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .vocab-target {
+    font-size: 1.1rem !important;
+  }
+
+  .vocab-translation {
+    font-size: 0.9rem;
+  }
+
+  /* Flashcards */
+  .flashcard-container {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .flashcard-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .flashcard-perspective {
+    height: 220px;
+  }
+
+  .flashcard-face {
+    padding: 1.25rem 1rem;
+  }
+
+  .flashcard-text {
+    font-size: 1.15rem;
+  }
+
+  .flashcard-controls {
+    gap: 1rem;
+  }
+
+  .flashcard-counter {
+    font-size: 0.82rem;
+  }
+
+  /* Quiz */
+  .quiz-card {
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .quiz-question-number {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .quiz-question {
+    font-size: 1.1rem;
+    margin-bottom: 1.15rem;
+  }
+
+  .quiz-option {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.9rem;
+    gap: 0.65rem;
+    min-height: 46px;
+    touch-action: manipulation;
+  }
+
+  .quiz-option-letter {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .quiz-results {
+    padding: 2rem 1.25rem;
+  }
+
+  .quiz-results-percentage {
+    font-size: 1.85rem;
+  }
+
+  /* Dialogue */
+  .dialogue-container {
+    padding: 1.15rem 0.85rem;
+    gap: 1rem;
+  }
+
+  .dialogue-bubble-wrapper {
+    max-width: 96%;
+    gap: 0.65rem;
+  }
+
+  .dialogue-avatar {
+    width: 34px;
+    height: 34px;
+    font-size: 0.8rem;
+  }
+
+  .dialogue-bubble {
+    padding: 0.75rem 0.95rem;
+  }
+
+  .dialogue-text-main {
+    font-size: 0.98rem;
+  }
+
+  .dialogue-text-sub {
+    font-size: 0.8rem;
+  }
+
+  /* Completion Section */
+  .complete-section {
+    padding: 1.75rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .complete-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.95rem 1.25rem;
+    font-size: 0.98rem;
+    touch-action: manipulation;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+
+  .footer-encouragement {
+    font-size: 1rem;
+  }
+
+  .footer-encouragement-pt {
+    font-size: 0.82rem;
+  }
+}
+
