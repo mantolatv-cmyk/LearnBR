@@ -418,7 +418,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Master rooms of the house, household cleaning ("fazer uma faxina"), and Brazilian domestic daily routines.',
     descriptionPt: 'Vocabulário sobre cômodos da casa, eletrodomésticos e o hábito brasileiro da faxina.',
     icon: 'Home',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/casa_faxina.jpg',
     color: 'mint',
     available: true,
     vocabulary: [
@@ -491,7 +491,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Expand your domestic Portuguese with appliances, apartment building etiquette, and Brazilian neighborhood life.',
     descriptionPt: 'Mais vocabulário sobre a casa, eletrodomésticos, condomínio e boa convivência.',
     icon: 'Sparkles',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/vizinhos.jpg',
     color: 'emerald',
     available: true,
     vocabulary: [
@@ -893,7 +893,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Navigate Brazilian cities: the subway ("metrô"), bus stations, historic squares, and corner bakeries ("padarias").',
     descriptionPt: 'Vocabulário para se locomover pela cidade, pedir informações e frequentar a padaria.',
     icon: 'MapPin',
-    image: 'https://images.unsplash.com/photo-1518638150340-f706e86654de?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/lugares_publicos.jpg',
     color: 'cyan',
     available: true,
     vocabulary: [
@@ -1130,7 +1130,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Unlock authentic Brazilian slang: "sextou", "tamo junto (TMJ)", "arrasou", "biscoitar", and internet memes.',
     descriptionPt: 'Vocabulário jovem e digital: gírias brasileiras, memes, postar stories e bombar na web.',
     icon: 'Share2',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/redes_sociais.jpg',
     color: 'violet',
     available: true,
     vocabulary: [
