@@ -13,6 +13,8 @@ import {
   BookText,
   Sparkles,
   Check,
+  Zap,
+  Scale,
 } from 'lucide-react';
 import { Scenario } from '@/data/types';
 import { DynamicIcon } from '@/components/ui/DynamicIcon';
@@ -25,6 +27,8 @@ import { SpeakingTab } from '@/components/features/SpeakingTab';
 import { ReadingTab } from '@/components/features/ReadingTab';
 import { BuildSentenceTab } from '@/components/features/BuildSentenceTab';
 import { UsefulExpressionsTab } from '@/components/features/UsefulExpressionsTab';
+import { SpeedMatchTab } from '@/components/features/SpeedMatchTab';
+import { WouldYouRatherTab } from '@/components/features/WouldYouRatherTab';
 import { useProgress } from '@/hooks/useProgress';
 import { triggerConfetti } from '@/components/ui/Confetti';
 
@@ -41,7 +45,9 @@ type TabType =
   | 'speaking'
   | 'reading'
   | 'buildsentence'
-  | 'expressions';
+  | 'expressions'
+  | 'speedmatch'
+  | 'wouldyourather';
 
 export function ScenarioDetailView({ scenario }: ScenarioDetailViewProps) {
   const [activeTab, setActiveTab] = useState<TabType>('vocabulary');
@@ -100,6 +106,17 @@ export function ScenarioDetailView({ scenario }: ScenarioDetailViewProps) {
           Flashcards
         </button>
 
+        {/* Speed Match Arcade Tab */}
+        {scenario.vocabulary && scenario.vocabulary.length > 0 && (
+          <button
+            className={`tab-btn ${activeTab === 'speedmatch' ? 'tab-btn-active' : ''}`}
+            onClick={() => setActiveTab('speedmatch')}
+          >
+            <Zap size={16} className="text-amber-500" />
+            Speed Match ⚡
+          </button>
+        )}
+
         <button
           className={`tab-btn ${activeTab === 'quiz' ? 'tab-btn-active' : ''}`}
           onClick={() => setActiveTab('quiz')}
@@ -148,6 +165,17 @@ export function ScenarioDetailView({ scenario }: ScenarioDetailViewProps) {
           </button>
         )}
 
+        {/* Would You Rather Dilemma Tab */}
+        {scenario.wouldYouRather && scenario.wouldYouRather.length > 0 && (
+          <button
+            className={`tab-btn ${activeTab === 'wouldyourather' ? 'tab-btn-active' : ''}`}
+            onClick={() => setActiveTab('wouldyourather')}
+          >
+            <Scale size={16} className="text-purple-600" />
+            Você Prefere? ⚖️
+          </button>
+        )}
+
         {scenario.usefulExpressions && scenario.usefulExpressions.length > 0 && (
           <button
             className={`tab-btn ${activeTab === 'expressions' ? 'tab-btn-active' : ''}`}
@@ -176,6 +204,10 @@ export function ScenarioDetailView({ scenario }: ScenarioDetailViewProps) {
         />
       )}
 
+      {activeTab === 'speedmatch' && (
+        <SpeedMatchTab vocabulary={scenario.vocabulary} scenarioId={scenario.id} />
+      )}
+
       {activeTab === 'quiz' && (
         <QuizTab
           questions={scenario.quiz}
@@ -198,6 +230,10 @@ export function ScenarioDetailView({ scenario }: ScenarioDetailViewProps) {
 
       {activeTab === 'buildsentence' && scenario.buildSentence && (
         <BuildSentenceTab items={scenario.buildSentence} />
+      )}
+
+      {activeTab === 'wouldyourather' && scenario.wouldYouRather && (
+        <WouldYouRatherTab items={scenario.wouldYouRather} />
       )}
 
       {activeTab === 'expressions' && scenario.usefulExpressions && (

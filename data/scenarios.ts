@@ -9,7 +9,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Learn Brazilian Portuguese vocabulary for family members, relationships, and traditional Sunday family lunches.',
     descriptionPt: 'Aprenda vocabulário sobre membros da família e o tradicional almoço de domingo.',
     icon: 'Users',
-    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/familia.jpg',
     color: 'rose',
     available: true,
     vocabulary: [
@@ -227,6 +227,29 @@ export const SCENARIOS: Scenario[] = [
         exampleEn: 'After a tough week, nothing beats going to mom’s house.',
         culturalContext: 'In Brazil, moms are famous for insisting their adult children eat hearty second and third portions.'
       }
+    ],
+    wouldYouRather: [
+      {
+        questionPt: 'No domingo com a família reunida, qual sobremesa você prefere?',
+        questionEn: 'On Sunday with the family gathered, which dessert do you prefer?',
+        optionA: 'Pudim de leite condensado da vovó com furinhos',
+        optionB: 'Pudim de leite condensado lisinho e bem cremoso',
+        culturalNote: 'No Brasil, a discussão entre pudim com furinhos (mais aerado) ou lisinho (mais denso) é quase um esporte nacional nas sobremesas de domingo!'
+      },
+      {
+        questionPt: 'Após o grande almoço de domingo, qual perrengue você encara?',
+        questionEn: 'After the big Sunday lunch, which challenge would you rather face?',
+        optionA: 'Lavar a montanha de louça e panelas da pia',
+        optionB: 'Ouvir o tio do pavê contando a mesma piada pela décima vez',
+        culturalNote: 'O "tio do pavê" é a clássica figura brasileira de família que pergunta em todo almoço: "É pavê ou pacumê?". É o clássico trocadilho tiozão do Brasil!'
+      },
+      {
+        questionPt: 'Sobre o feijão do almoço, qual é a sua preferência suprema?',
+        questionEn: 'Regarding Sunday lunch beans, what is your supreme preference?',
+        optionA: 'Feijão sempre por cima do arroz',
+        optionB: 'Feijão sempre por baixo do arroz',
+        culturalNote: 'Colocar o feijão por cima ou por baixo do arroz divide o Brasil em dois grupos apaixonados. A maioria defende com unhas e dentes: feijão por cima!'
+      }
     ]
   },
 
@@ -238,7 +261,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Learn conversational Brazilian Portuguese for meeting friends, making plans ("marcar um rolê"), and chatting at a boteco.',
     descriptionPt: 'Aprenda vocabulário sobre amizades, marcar rolê e bater papo com a galera.',
     icon: 'UserPlus',
-    image: 'https://images.unsplash.com/photo-1543807535-eceef0bc6599?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/amigos.jpg',
     color: 'lavender',
     available: true,
     vocabulary: [
@@ -330,6 +353,22 @@ export const SCENARIOS: Scenario[] = [
         correctIndex: 2,
         explanation: '"Rachar" means to split, so "rachar a conta" means splitting the restaurant or bar bill.'
       }
+    ],
+    wouldYouRather: [
+      {
+        questionPt: 'Na hora de pagar a mesa do boteco com a galera, o que você prefere?',
+        questionEn: 'When paying the boteco table with friends, which do you prefer?',
+        optionA: 'Rachar a conta igualmente em partes iguais sem estresse',
+        optionB: 'Fazer as contas de cada coxinha e cerveja e pagar no Pix exato',
+        culturalNote: 'No boteco brasileiro, o tradicional é a "saideira" e "rachar a conta" por igual para não complicar, mas o Pix hoje permite que cada um pague exatamente o que consumiu!'
+      },
+      {
+        questionPt: 'Para curtir o sábado à noite com os amigos, qual é o seu rolê?',
+        questionEn: 'To enjoy Saturday night with friends, what is your hangout?',
+        optionA: 'Mesa de plástico na calçada do boteco com cerveja gelada e porção de batata',
+        optionB: 'Festa balada fechada com música eletrônica alta e fila na porta',
+        culturalNote: 'A clássica mesa de plástico amarela na calçada do boteco é sagrada no Brasil: símbolo de informalidade, amizade sincera e conversa descontraída.'
+      }
     ]
   },
 
@@ -341,7 +380,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Learn anatomy, describing how you feel, going to the pharmacy ("drogaria"), and doctor visits in Brazil.',
     descriptionPt: 'Aprenda vocabulário sobre o corpo humano, sintomas e como se comunicar na farmácia.',
     icon: 'Accessibility',
-    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/corpo.jpg',
     color: 'peach',
     available: true,
     vocabulary: [
@@ -540,7 +579,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Consolidate everything learned across Family, Friends, Body, and Home with comprehensive comprehension challenges.',
     descriptionPt: 'Revisão completa dos primeiros tópicos: família, amigos, corpo humano e rotina da casa.',
     icon: 'Star',
-    image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/revisao1.jpg',
     color: 'amber',
     available: true,
     vocabulary: [
@@ -581,7 +620,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Discover Brazilian pastimes: playing cavaquinho or guitar, dancing samba, beach walks, and relaxing in a hammock.',
     descriptionPt: 'Expresse seus passatempos: tocar violão, dançar forró e samba, ler na rede e relaxar.',
     icon: 'Palette',
-    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/hobbies.jpg',
     color: 'amber',
     available: true,
     vocabulary: [
@@ -680,6 +719,15 @@ export const SCENARIOS: Scenario[] = [
         correctIndex: 1,
         explanation: 'A "pelada" is an informal pickup soccer game played on sand, grass, or streets across Brazil.'
       }
+    ],
+    wouldYouRather: [
+      {
+        questionPt: 'Para viver a emoção do futebol brasileiro, qual experiência você escolhe?',
+        questionEn: 'To experience the thrill of Brazilian soccer, which experience do you choose?',
+        optionA: 'Assistir a um clássico no Maracanã lotado com a torcida cantando sem parar',
+        optionB: 'Jogar uma pelada descalço na praia de Copacabana ao pôr do sol',
+        culturalNote: 'O Maracanã com 70 mil pessoas cantando é uma experiência quase religiosa, enquanto a pelada na praia é a essência pura e descontraída do futebol-arte brasileiro.'
+      }
     ]
   },
 
@@ -691,7 +739,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Experience buying groceries in Brazil: tropical fruits, weighing produce, and eating pastel de feira with sugarcane juice.',
     descriptionPt: 'Aprenda a fazer compras no mercado, pesar legumes e saborear pastel de feira com caldo de cana.',
     icon: 'ShoppingCart',
-    image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/supermercado.jpg',
     color: 'emerald',
     available: true,
     vocabulary: [
@@ -746,7 +794,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Learn clothing vocabulary, trying clothes in the fitting room ("provador"), and asking for discounts ("tem desconto no Pix?").',
     descriptionPt: 'Vocabulário de compras, provador de roupas e formas naturais de negociar desconto.',
     icon: 'ShoppingBag',
-    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/compras.jpg',
     color: 'sky',
     available: true,
     vocabulary: [
@@ -802,7 +850,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Learn career titles, workplace conversations, remote work terms ("home office"), and networking in Brazil.',
     descriptionPt: 'Vocabulário profissional: carreiras, reuniões, home office e o mercado de trabalho.',
     icon: 'Briefcase',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/profissoes.jpg',
     color: 'indigo',
     available: true,
     vocabulary: [
@@ -857,7 +905,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Consolidate Hobbies, Sports, Markets, Shopping, and Professions into confident conversational flow.',
     descriptionPt: 'Revisão intermediária integrando esportes, feiras, compras e ambiente de trabalho.',
     icon: 'Star',
-    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/revisao2.jpg',
     color: 'amber',
     available: true,
     vocabulary: [
@@ -954,7 +1002,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Learn about domestic pets and Brazil\'s world-famous wildlife: capybaras, golden lion tamarins, and the iconic caramel mutt dog.',
     descriptionPt: 'Animais de estimação e a rica biodiversidade brasileira: capivara, vira-lata caramelo e tucano.',
     icon: 'PawPrint',
-    image: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/animais.jpg',
     color: 'stone',
     available: true,
     vocabulary: [
@@ -1007,7 +1055,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Explore culinary treasures: feijoada, pão de queijo quentinho, coxinha com catupiry, brigadeiro, and moqueca.',
     descriptionPt: 'Aprenda vocabulário culinário, receitas e pratos emblemáticos da gastronomia do Brasil.',
     icon: 'ChefHat',
-    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/culinaria.jpg',
     color: 'red',
     available: true,
     vocabulary: [
@@ -1059,6 +1107,22 @@ export const SCENARIOS: Scenario[] = [
         correctIndex: 0,
         explanation: 'Brigadeiro is made by simmering condensed milk with butter and cocoa powder, then rolled in chocolate sprinkles!'
       }
+    ],
+    wouldYouRather: [
+      {
+        questionPt: 'Entre os dois maiores clássicos da comida de rua do Brasil, qual é o seu favorito?',
+        questionEn: 'Between the two greatest Brazilian street food classics, which is your favorite?',
+        optionA: 'Pastel de feira frito na hora com caldo de cana com limão',
+        optionB: 'Coxinha dourada com recheio de frango com catupiry e Guaraná gelado',
+        culturalNote: 'Pastel de feira com caldo de cana e coxinha com guaraná são os dois maiores patrimônios afetivos da culinária de rua brasileira!'
+      },
+      {
+        questionPt: 'Num dia de chuva ou maratona de séries, qual doce você escolhe?',
+        questionEn: 'On a rainy day or movie marathon, which sweet do you choose?',
+        optionA: 'Brigadeiro de panela comendo de colher ainda morno',
+        optionB: 'Bolo de cenoura fofinho com cobertura crocante de chocolate',
+        culturalNote: 'O brigadeiro de colher e o bolo de cenoura com cobertura de chocolate são os "comfort foods" doces mais queridos de qualquer casa brasileira.'
+      }
     ]
   },
 
@@ -1070,7 +1134,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'Master digital life in Brazil: sending audio notes on WhatsApp ("Zap"), making a Pix, and mobile data top-ups.',
     descriptionPt: 'Vocabulário tecnológico do dia a dia: mandar áudio no Zap, fazer um Pix e carregar o celular.',
     icon: 'Laptop',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/tecnologia.jpg',
     color: 'slate',
     available: true,
     vocabulary: [
@@ -1118,6 +1182,22 @@ export const SCENARIOS: Scenario[] = [
         ],
         correctIndex: 0,
         explanation: 'Pix revolutionized Brazil\'s economy: it is an instantaneous, free electronic payment method used by everyone.'
+      }
+    ],
+    wouldYouRather: [
+      {
+        questionPt: 'Quando você precisa contar uma história longa e cheia de fofoca, o que você faz?',
+        questionEn: 'When you need to tell a long story full of gossip, what do you do?',
+        optionA: 'Mandar um áudio de 5 minutos no Zap explicando cada detalhe',
+        optionB: 'Digitar um textão enorme de 30 linhas com vários emojis',
+        culturalNote: 'Mandar áudio no WhatsApp (o famoso "Zap") é uma instituição nacional brasileira: as pessoas contam histórias como se fossem episódios de podcast!'
+      },
+      {
+        questionPt: 'Ao fazer compras ou pagar contas do mês, qual é a sua regra?',
+        questionEn: 'When shopping or paying monthly bills, what is your rule?',
+        optionA: 'Pedir desconto do chefe e pagar à vista no Pix na mesma hora',
+        optionB: 'Parcelar em 12 vezes sem juros no cartão de crédito',
+        culturalNote: 'O hábito de parcelar tudo em 12x ("no carnê" ou "no cartão") é clássico no Brasil, mas o Pix hoje dá o poder de pechinchar 5% a 10% de desconto imediato!'
       }
     ]
   },
@@ -1192,7 +1272,7 @@ export const SCENARIOS: Scenario[] = [
     description: 'The ultimate Brazilian Portuguese milestone test covering tech, food, wildlife, city navigation, and colloquial mastery.',
     descriptionPt: 'Desafio final integrando tecnologia, culinária, gírias da internet e fluência prática.',
     icon: 'Star',
-    image: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/revisao3.jpg',
     color: 'amber',
     available: true,
     vocabulary: [
